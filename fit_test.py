@@ -6,6 +6,9 @@ from sklearn.metrics import mean_squared_error
 
 plt.rcParams["font.sans-serif"] = ["KaiTi"]
 plt.rcParams["axes.unicode_minus"] = False
+import matplotlib
+matplotlib.use('TkAgg')  # 或者使用 'Qt5Agg'、'Agg' 视图不显示但可以保存
+
 
 def polynomial(x, degree):
     """构成多项式，返回 [x^1,x^2,x^3,...,x^n]"""
